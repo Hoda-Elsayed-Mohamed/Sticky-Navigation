@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans'); 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #222;
+    padding-bottom: 50px;
+    font-size: 16px ;
+}
+.container{
+    max-width: 1000px;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)),url('https://images.unsplash.com/photo-1673024697368-947323b88951?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #222;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.4);
+    
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+h2{white-space: nowrap;}
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li {
+    margin-left: 1.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+h1{
+    margin-bottom: 0;
+}
+h3{
+    margin: 30px 0 20px;
+    font-size: 1rem;
+}
+.text{
+    margin-inline: auto;
+    padding: 30px 0;
+}
+
+nav.sticky{
+    background: white;
+    box-shadow: 2px 4px 8px rgba(333,333,333,0.2);
+}
+nav.sticky .container{
+    
+    padding: 10px;
+}
+nav.sticky a{
+    color: black;
+}
+li a:hover, li a.current{
+    color: #c0392b;
+    font-weight: bold;
+}
+@media (max-width: 800px) {
+    body{
+        font-size: 12px;
+    }
+    li{
+        margin-left: 1rem;
+    }
+}
